@@ -121,3 +121,26 @@ Key pair = private key + publi key
 ### SCP
 
 copy files and directory between servers
+
+## IPTABLES
+
+`sudo apt install iptables` on ubunto OS
+`sudo iptables -L` to list the rules
+
+- `-A` add rule
+- -p protocol
+- -s source
+- -d destination
+- --dport destination port
+- -j action to take
+
+## CRON
+
+`crontab -e` opens cron config file
+
+minute | hour | day | month | weekday
+
+stepvalue \*/2
+
+`contab -l` to list all the jobs
+/var/log/syslog logs the information of the cron jobs
